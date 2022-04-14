@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>E-Commerce Testing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script async src="js/main.js"></script>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+<body>
+<div class="absoluteBlackOut"></div>
+    <header>
+        <div class="headerLogo">
+            <img src="images/header/logoHoriz.png" alt="logoHoriz">
+            <span id="logoName">WEB ALTERNATIVE</span>
+        </div>
+        <div class="feedback">
+            <button>Заказать звонок</button>
+            <a>+7 (4212) 25-30-85</a>
+        </div>
+        <div class="divNav">
+            <nav>
+                <a href="#">О студии</a>
+                <a href="#">Портфолио</a>
+                <a href="#">Наши услуги</a>
+                <a href="#">Новости</a>
+                <a href="#">Отзывы</a>
+                <a href="#">Контакты</a>
+            </nav>
+            <button id="burger">&#9776;</button>
+        </div>
+    </header>
+
+    <main>
+<!--page Head mobile version-->
+        <div class="main">
+            <div class="head">
+                <p id="headCommerse"><img src="images/main/shoppingCart.png" alt="shopingCartImage">Ecommerce</p>
+                <h1 id="marketPlace">Интернет-магазин принесет вам максимум прибыли!</h1>
+            </div>
+            <div class="phoneAndButton">
+                <img src="images/main/imgPhoneHead.png" alt="phone" id="phone">
+                <div class="button">
+                    <button id="button">Заказать звонок<img src="images/main/imgUpArrow.png" alt="arrow"></button>
+                    <p id="answer">Ответим на любой вопрос</p>
+                </div>
+            </div>
+        </div>
+<!--Desktop version-->
+        <div class="mainDesktop">
+            <div class="headDesktop">
+                <p id="headCommerse"><img src="images/main/shoppingCart.png" alt="shopingCartImage">Ecommerce</p>
+                <h1 id="marketPlace">Интернет-магазин принесет вам максимум прибыли!</h1>
+                <p style="font-size: 20px; margin-top: 48px;">Рассказываем, что такое интернет-магазин и зачем это нужно.</p>
+                <p id="answerDesktop">Ответим на любой вопрос</p>
+                <div class="buttonDesktop">
+
+                    <button id="buttonDesktop">Заказать звонок<img src="images/main/imgUpArrow.png" alt="arrow"></button>
+
+                </div>
+            </div>
+            <div class="phoneDesktop">
+                <img src="images/main/imgPhoneDesktop.png" id="phoneDesktop" alt="phoneDesktop">
+                <span id="E">E</span>
+            </div>
+        </div>
+<!--    page HOW  Mobile  -->
+        <div class="how">
+            <p>КАК МЫ РАБОТАЕМ НАД ВАШИМ ПРОЕКТОМ</p>
+            <div class="container">
+                <img src="images/how/vector.svg" alt="vectorVertical">
+                <div class="grid">
+                    <div class="item">
+                        <span id="red">01</span><b>Анализ Целевой Аудитории</b>
+                        <button class="arrowDown" id="arrowOne"><img src="images/how/arrowDown.svg" alt="arrow"></button>
+                        <div class="howPageToogle">
+                            <p>Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса, PayPal, Robokassa или Stripe, и ваши покупатели смогут безопасно оплатить товар или услугу картой Visa или Mastercard, Яндекс.Деньгами, со счета мобильного телефона, через Сбербанк Онлайн или Альфа Клик.</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <span>02</span><b>ПОДГОТОВКА ТЗ</b>
+                        <button class="arrowDown" id="arrowTwo"><img src="images/how/arrowDown.svg" alt="arrow"></button>
+                    </div>
+                    <div class="item">
+                        <span>03</span><b>ПОДПИСАНИЕ ДОГОВОРА И ОПЛАТА</b>
+                        <button class="arrowDown" id="arrowThree"><img src="images/how/arrowDown.svg" alt="arrow"></button>
+                    </div>
+                    <div class="item">
+                        <span>04</span><b>РАЗРАБОТКА САЙТА ИНТЕРНЕТ-МАГАЗИНА</b>
+                        <button class="arrowDown"><img src="images/how/arrowDown.svg" alt="arrow"></button>
+                    </div>
+                    <div class="item">
+                        <span>05</span><b>НАСТРОЙКА И НАПОЛНЕНИЕ ИНТЕРНЕТ-МАГАЗИНА</b>
+                        <button class="arrowDown"><img src="images/how/arrowDown.svg" alt="arrow"></button>
+                    </div>
+                    <div class="item">
+                        <span>06</span><b>ПРИВЛЕЧЕНИЕ ПОКУПАТЕЛЕЙ</b>
+                        <button class="arrowDown"><img src="images/how/arrowDown.svg" alt="arrow"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--    HOW page desktop    -->
+        <div class="howPageDesktop">
+            <div class="backgroundPath">
+               <h3 style="color: white;">КАК МЫ РАБОТАЕМ НАД ВАШИМ ПРОЕКТОМ</h3>
+                <div class="howPageGridContainer">
+                    <div class="gridItemsDesktop">
+                        <img src="images/how/Audition.png" alt="firstimg">
+                        <span id="colorGridNumber">01</span>
+                        <button id="aboutShow">Подробнее<span id="circle"></span></button>
+                    </div>
+                    <!--DIV POPUP-->
+                    <div class="popUp">
+                        <button id="back">Назад</button>
+                        <p id="popUpP1">Принимайте платежи картой, с помощью удобных платежных систем!</p>
+                        <p id="popUpP2">Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса, PayPal, Robokassa или Stripe, и ваши покупатели смогут безопасно оплатить товар или услугу картой Visa или Mastercard, Яндекс.Деньгами, со счета мобильного телефона, через Сбербанк Онлайн или Альфа Клик.</p>
+                    </div>
+                    <!--         -->
+                    <div class="gridItemsDesktop">
+                        <img src="images/how/SMM.png" alt="smm">
+                        <span>02</span>
+                        <span id="about">ПОДГОТОВКА ТЗ</span>
+                    </div>
+                    <div class="gridItemsDesktop">
+                        <img src="images/how/Group.png" alt="group">
+                        <span>03</span>
+                        <span id="about">ПОДПИСАНИЕ ДОГОВОРА И ОПЛАТА</span>
+                    </div>
+                    <div class="gridItemsDesktop">
+                        <img src="images/how/Ad.png" alt="ad">
+                        <span>04</span>
+                        <span id="about">РАЗРАБОТКА САЙТА ИНТЕРНЕТ-МАГАЗИНА</span>
+                    </div>
+                    <div class="gridItemsDesktop">
+                        <img src="images/how/People.png" alt="people">
+                        <span>05</span>
+                        <span id="about">НАСТРОЙКА И НАПОЛНЕНИЕ ИНТЕРНЕТ-МАГАЗИНА</span>
+                    </div>
+                    <div class="gridItemsDesktop">
+                        <img src="images/how/Complex.png" alt="complex">
+                        <span>06</span>
+                        <span id="about">ПРИВЛЕЧЕНИЕ ПОКУПАТЕЛЕЙ</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- features page mobile       -->
+        <div class="features">
+            <div class="itemFlex one">
+                <div class="banks">
+                    <img src="images/features/sberbankOnline.png" alt="sberbank">
+                    <img src="images/features/logoRobokassa.png" alt="robokassa">
+                    <img src="images/features/yandexKassa.png" alt="yandex">
+                </div><br>
+                <b>Принимайте платежи картой, с помощью удобных платежных систем!</b>
+                <p>Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса, PayPal, Robokassa или Stripe, и ваши покупатели смогут безопасно оплатить товар или услугу картой Visa или Mastercard, Яндекс.Деньгами, со счета мобильного телефона, через Сбербанк Онлайн или Альфа Клик.</p>
+            </div>
+            <div class="itemFlex twoF">
+                <div class="imageWebSite">
+                    <div class="border">
+                        <img src="images/features/imgBrowser.png" alt="imgBrowser">
+                        <button id="myWebSite"><img src="images/features/lock.png" alt="lock"><span>https://mywebsite.org/</span></button>
+                    </div>
+                </div><br>
+                <b>Принимайте картой, пустые нули!</b>
+                <p>Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса, PayPal, Robokassa или Stripe, и ваши покупатели смогут безопасно cовершать покупки.</p>
+            </div>
+            <div class="itemFlex threeF">
+                <img id="oneC" src="images/features/1C.png" alt="1C">
+                <b>Интегрируем неинтегрируемое!</b>
+                <p>Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса, PayPal, Robokassa или Stripe, и ваши покупатели смогут безопасно cовершать покупки.</p>
+            </div>
+
+        </div>
+<!--  features page  desktop    -->
+        <div class="featuresDesktop">
+            <div class="backgroundFeaturesBlum">
+                <div class="phoneDataBanks">
+                    <img src="images/features/phone.png" alt="phone">
+                    <div class="formFeaturesBanks">
+                        <p id="titlePay">Web Pay</p>
+                        <div class="imgBanks">
+                            <div class="paypal"></div>
+                            <div class="visa"></div>
+                            <div class="mastercard"></div>
+                        </div>
+                        <form class="formFeatures" action="" method="POST">
+                            <div class="input nameMan">
+                                <label> Имя
+                                    <input id="nameMan" name="name" placeholder="Введите имя">
+                                </label>
+                            </div><br><br>
+                            <div class="input numberCarts">
+                                <label> Номер карты
+                                    <input id="numberCarts" name="numberCarts" placeholder="Введите номер карты">
+                                </label>
+                            </div><br><br>
+                            <div class="input validityPeriod">
+                                <label> Срок действия
+                                    <input id="validityPeriod" name="validityPeriod" placeholder="Введите сюда">
+                                </label>
+                            </div>
+                            <div class="input ccv">
+                                <label> CCV
+                                    <input id="ccv" name="CCV" placeholder="Введите ССV"></label>
+                            </div>
+                            <div class="fingerprint">
+                                <img src="images/features/fingerprint.png" alt="fingerImg">
+                            </div>
+                            <input id="paySubmit" type="submit" value="Оплатить">
+                        </form>
+
+                    </div>
+                </div>
+                <div class="info">
+                    <p id="p1">Принимайте платежи картой, с помощью
+                        удобных платежных систем!</p>
+                    <p id="p2">Подключите один из надежных сервисов: Яндекс.Деньги, Яндекс.Касса, PayPal, Robokassa или Stripe, и ваши покупатели смогут безопасно оплатить товар или услугу картой Visa или Mastercard, Яндекс.Деньгами, со счета мобильного телефона, через Сбербанк Онлайн или Альфа Клик.</p>
+                    <div class="logoBanksFlex">
+                        <img src="images/features/sberbankOnline.png" alt="sberbank">
+                        <img src="images/features/yandexKassa.png" alt="yandex">
+                        <img src="images/features/logoRobokassa.png" alt="robokassa">
+                    </div>
+                </div>
+            </div>
+            <div class="clickPhone">
+                <a id="featuresClick">Безопасность</a>
+                <a id="featuresClick">CRM & 1C</a>
+                <a id="featuresClick">Онлайн оплата</a>
+            </div>
+        </div>
+<!-- cases page mobile       -->
+        <div class="cases">
+            <h1>НАШИ КЕЙСЫ</h1>
+            <div class="flexContainer">
+                <div class="itemCases">
+                    <img src="images/cases/flower.png" alt="flower">
+                    <h3>Королество цветов</h3><br>
+                    <h4>Интернет-магазин</h4>
+                </div>
+                <div class="itemCases">
+                    <img src="images/cases/climate.png" alt="climate">
+                    <h3>Мастер климат</h3><br>
+                    <h4>Интернет-магазин</h4>
+                </div>
+                <div class="itemCases">
+                    <img src="images/cases/pharmacy.png" alt="pharmacy">
+                    <h3>Новая аптека</h3><br>
+                    <h4>Интернет-магазин</h4>
+                </div>
+                <div class="itemCases">
+                    <img src="images/cases/technology.png" alt="technology">
+                    <h3>Восток Тех Резерв</h3><br>
+                    <h4>Интернет-магазин</h4>
+                </div>
+                <div class="itemCases application">
+                    <div class="applicationDivFlex">
+                        <img id="mess" src="images/cases/iconMessage.png" alt="iconMessage"><img id="heart" src="images/cases/heart.png" alt="heart">
+                        <p>Оставьте свою заявку, чтобы получить БЕСПЛАТНУЮ консультацию!</p>
+                    </div>
+                    <button id="application">Оставить заявку</button>
+                </div>
+            </div>
+        </div>
+<!--  cases page desktop    -->
+        <div class="casesDesktop">
+
+            <div class="backgroundCasesBlum">
+                <h4>КЕЙСЫ ГОВОРЯТ ЗА СЕБЯ</h4>
+                <div class="casesFlexContainer">
+                    <div class="casesFlexItem">
+                        <div class="backgroundFlower"></div>
+                        <p id="casesContentTitle">Королество цветов</p>
+                        <p id="casesContent">Интернет-магазин</p>
+                    </div>
+                    <div class="casesFlexItem">
+                        <div class="backgroundClimate"></div>
+                        <p id="casesContentTitle">Мастер климат</p>
+                        <p id="casesContent">Интернет-магазин</p>
+                    </div>
+                    <div class="casesFlexItem">
+                        <div class="backgroundPharmacy"></div>
+                        <p id="casesContentTitle"> Новая аптека</p>
+                        <p id="casesContent">Интернет-магазин</p>
+                    </div>
+                    <div class="casesFlexItem">
+                        <div class="backgroundTechnology"></div>
+                        <p id="casesContentTitle">Восток Тех Резерв</p>
+                        <p id="casesContent">Интернет-магазин</p>
+                    </div>
+                </div>
+                <div class="request">
+                    <div id="leftDiv">Оставьте заявку, чтобы получить БЕСПЛАТНУЮ консультацию! </div>
+                    <div id="rightDiv">Оставить заявку <img src="images/cases/arrow.png" id="arrowImg" alt="arrow"> </div>
+                </div>
+            </div>
+        </div>
+<!--  clients page desktop      -->
+        <div class="ourCLientsDesktop">
+            <div class="backgroundClientsBlum">
+                <h4>НАШИ КЛИЕНТЫ</h4>
+                <div class="clientsFlexContainer">
+                    <div class="clientsFlexItem" id="logoPark">
+                        <span id="color">01</span>
+                    </div>
+                    <div class="clientsFlexItem" id="logoPharmacy"><span>02</span></div>
+                    <div class="clientsFlexItem" id="logoSmartShop"><span>03</span></div>
+                    <div class="clientsFlexItem" id="logoSenorTomato"><span>04</span></div>
+                </div>
+                <div class="buttonNextBack">
+                    <a href="#"><img id="lessArrow" src="images/clients/ellipse.png" alt="back img"></a>
+                    <a href="#"><img id="test" src="images/clients/ellipse.png" alt="next img"></a>
+                </div>
+            </div>
+        </div>
+<!--        -->
+        <div class="form">
+            <div class="clients">
+                <h1>НАШИ КЛИЕНТЫ</h1>
+                <div id="exampleClients" class="exampleClients">                <!--здесь вставлять примеры клиентов-->
+                    <div class="ellipse">
+                        <img src="images/clients/logoPark.png" alt="park img">
+                    </div>
+                    <div class="moreLess">                                      <!--Кнопки вперёд/назад-->
+                        <img id="lessArrow" src="images/clients/ellipse.png" alt="back img">
+                        <img id="test" src="images/clients/ellipse.png" alt="next img">
+                    </div>
+                </div>
+
+            </div>
+            <div class="flexUl">
+                <h2 class="desktopFade">Оставьте заявку, чтобы узнать, как создать свой интернет-магазин</h2>
+                <h1>Интернет-магазин, который приносит прибыль</h1>
+
+                <div class="ulLi">
+                    <ul class="lists">
+                        <li><h5>Получите бесплатно</h5></li>
+                        <li>Личная консультация</li>
+                        <li>Стратегия запуска и продвижения</li>
+                        <li>Коммерческое предложение</li>
+                    </ul>
+                </div>
+                <h2 class="mobileFade">Оставьте заявку, чтобы узнать, как создать свой интернет-магазин</h2>
+            </div>
+
+            <div class="divForm">
+                <form class="formClients">
+                    <input id="name" name="name" placeholder="Имя"><br>
+                    <input id="number" name="number" placeholder="+7(000)000-00-00"><br>
+                    <textarea id="text" name="text" placeholder="Расскажите о своей задаче"></textarea><br>
+                    <div class="checkbox">
+                        <input type="checkbox" id="checkboxPersonData">
+                        <label>Нажимая на кнопку "Отправить", я даю согласие на обработку персональных данных.</label>
+                    </div><br>
+                    <div class="g-recaptcha" data-sitekey="6KepjAsTFFFFFFMqccY0ZiGqc3TEd3YVxo8cHsGX"></div><br>
+                    <button id="submitForm">Отправить</button><br>
+                </form>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="logoFooter">
+            <img src="images/footer/logoWebAlt.png" alt="logoFooter">
+            <img src="images/footer/logoTextWebAlt.png" alt="Logo Text">
+        </div>
+        <div class="contacts">
+            <h6>Контакты</h6>
+            <p>ул.Волочаевская, 8г</p>
+            <p>+7 (4212)470-300</p>
+            <p>+7 (4212) 25-30-85</p>
+        </div>
+        <div class="social">
+            <h6>Мы в соцсетях</h6>
+            <p>Instagram</p>
+            <p>Facebook</p>
+            <p>Vkontakte</p>
+        </div>
+        <div class="map">
+            <p>Найди нас<br> на карте</p>
+            <img src="images/footer/arrow.png" alt="right">
+            <img src="images/footer/map.png" alt="map">
+        </div>
+    </footer>
+
+</body>
+</html><!--<div class="application">
+    <div class="applicationDivFlex">
+        <img id="mess" src="images/cases/iconMessage.png"><img id="heart" src="images/cases/heart.png">
+        <p>Оставьте свою заявку, чтобы получить БЕСПЛАТНУЮ консультацию!</p>
+    </div>
+    <button>Оставить заявку</button>
+</div><br><br>-->
